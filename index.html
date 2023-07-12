@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Signika:wght@400;500&family=Yantramanav&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="styles/animate.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Adventure Gear</title>
+  </head>
+  <body id="body">
+    <header class="header">
+      <div class="container" id="container">
+        <nav class="navigation">
+          <div class="navigation__logo">
+            <a href="#"
+              ><img
+                src="images/logo.svg"
+                alt="logo"
+                class="navigation__logo-img"
+            /></a>
+            <a class="navigation__name" href="#">Adventure Gear</a>
+          </div>
+          <div class="navigation__mail">
+            <img
+              src="images/letter.svg"
+              alt="letter"
+              class="navigation__mail-img"
+            />
+            <a
+              class="navigation__mail-link"
+              href="mailto:romounnikiddo@gmail.com"
+              >romounnikiddo@gmail.com</a
+            >
+          </div>
+          <div class="navigation__phone">
+            <img
+              src="images/phone.svg"
+              alt="phone"
+              class="navigation__phone-img"
+            />
+            <a class="navigation__tel-link" href="tel:+79016423225"
+              >+7(901)642-32-25</a
+            >
+          </div>
+          <!-- <button class="navigation__button" id="button1">
+            Заказать звонок
+          </button> -->
+          <div class="button-with-svg">
+            <button class="navigation__button" id="button1">
+              Заказать звонок
+            </button>
+            <svg
+              class="svg-container1"
+              width="208"
+              height="24"
+              viewBox="0 0 208 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="svg-line"
+                id="line"
+                d="M1 24V7.5L1.5 5L3 3L5 1.5L7 1H10H200H201.5L203 1.5L204.5 2.5L205.5 3.5L206.5 5L207 6.5V8V24"
+                stroke="white"
+                stroke-width="3"
+              />
+            </svg>
+
+            <svg
+              class="svg-container2"
+              width="208"
+              height="24"
+              viewBox="0 0 208 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="svg-line"
+                id="line2"
+                d="M1 0V16V17L1.5 19L2.5 20.5L3.5 21.5L5 22.5L6.5 23H8.5H117.5H200H201L203 22.5L204 22L206 19.5L207 17V11V1"
+                stroke="white"
+                stroke-width="3"
+              />
+            </svg>
+          </div>
+        </nav>
+      </div>
+      <section class="introduction">
+        <div class="container">
+          <div class="introduction__content">
+            <ul class="introduction__menu">
+              <li
+                class="introduction__menu-element introduction__menu-element-first introduction__menu-element-first-another"
+              >
+                <a
+                  id="introduction-first-link"
+                  class="introduction__link"
+                  href="#"
+                  onmouseover="ChangeFirstLine()"
+                  onmouseout="RechangeFirstLine()"
+                  ><span class="introduction__text-content">Главная</span>
+                </a>
+                <svg class="line-svg first-svg" width="inherit" height="9">
+                  <circle
+                    id="first-point"
+                    cx="93.5"
+                    cy="5"
+                    r="3.5"
+                    fill="transparent"
+                  ></circle>
+                  <line
+                    class="first-line"
+                    id="first-line-svg"
+                    x1="0.5"
+                    y1="5"
+                    x2="90.5"
+                    y2="5"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-dasharray="90"
+                    stroke-dashoffset="-90"
+                  ></line>
+                </svg>
+              </li>
+              <li
+                class="introduction__menu-element introduction__menu-element-second"
+              >
+                <a
+                  href="#advantages"
+                  class="introduction__link"
+                  onmouseover="ChangeSecondLine()"
+                  onmouseout="RechangeSecondLine()"
+                  ><span class="introduction__text-content"
+                    >Преимущества</span
+                  ></a
+                >
+                <svg class="line-svg second-line" width="inherit" height="9">
+                  <circle
+                    id="second-point"
+                    cx="170"
+                    cy="5"
+                    r="3.5"
+                    fill="transparent"
+                  ></circle>
+                  <line
+                    class="second-line"
+                    id="second-line-svg"
+                    x1="0"
+                    y1="5"
+                    x2="170"
+                    y2="5"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-dasharray="170"
+                    stroke-dashoffset="-170"
+                  ></line>
+                </svg>
+              </li>
+
+              <li
+                class="introduction__menu-element introduction__menu-element-third"
+              >
+                <a
+                  href="#products-link"
+                  class="introduction__link"
+                  onmouseover="ChangeThirdLine()"
+                  onmouseout="RechangeThirdLine()"
+                  ><span class="introduction__text-content">Товары</span></a
+                >
+                <svg class="line-svg third-line" width="inherit" height="9">
+                  <circle
+                    id="third-point"
+                    cx="87"
+                    cy="5"
+                    r="3.5"
+                    fill="transparent"
+                  ></circle>
+                  <line
+                    class="third-line"
+                    id="third-line-svg"
+                    x1="0"
+                    y1="5"
+                    x2="85"
+                    y2="5"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-dasharray="90"
+                    stroke-dashoffset="-90"
+                  ></line>
+                </svg>
+              </li>
+
+              <li
+                class="introduction__menu-element introduction__menu-element-fourth"
+              >
+                <a
+                  href="#comments-link"
+                  class="introduction__link"
+                  onmouseover="ChangeFourthLine()"
+                  onmouseout="RechangeFourthLine()"
+                  ><span class="introduction__text-content">Отзывы</span></a
+                >
+                <svg class="line-svg fourth-line" width="inherit" height="9">
+                  <circle
+                    id="fourth-point"
+                    cx="90"
+                    cy="5"
+                    r="3.5"
+                    fill="transparent"
+                  ></circle>
+                  <line
+                    class="fourth-line"
+                    id="fourth-line-svg"
+                    x1="0"
+                    y1="5"
+                    x2="90"
+                    y2="5"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-dasharray="90"
+                    stroke-dashoffset="-90"
+                  ></line>
+                </svg>
+              </li>
+            </ul>
+
+            <div class="introduction__main-information">
+              <h1 class="introduction__header">
+                Готовьтесь к своему следующему приключению с нами
+              </h1>
+              <p class="introduction__paragraph">
+                Широкий и актуальный выбор снаряжения для путешествий
+              </p>
+              <!-- <button class="introduction__button">Купить сейчас</button> -->
+              <div class="button-with-svg">
+                <button class="introduction__button" id="button2">
+                  Купить сейчас
+                </button>
+                <svg
+                  class="svg-container1"
+                  width="208"
+                  height="24"
+                  viewBox="0 0 208 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="svg-line"
+                    id="line3"
+                    d="M1 24V7.5L1.5 5L3 3L5 1.5L7 1H10H200H201.5L203 1.5L204.5 2.5L205.5 3.5L206.5 5L207 6.5V8V24"
+                    stroke="white"
+                    stroke-width="3"
+                  />
+                </svg>
+
+                <svg
+                  class="svg-container2"
+                  width="208"
+                  height="24"
+                  viewBox="0 0 208 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="svg-line"
+                    id="line4"
+                    d="M1 0V16V17L1.5 19L2.5 20.5L3.5 21.5L5 22.5L6.5 23H8.5H117.5H200H201L203 22.5L204 22L206 19.5L207 17V11V1"
+                    stroke="white"
+                    stroke-width="3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="main"  id="advantages">
+      <section class="deliviery" id="deliviery-block">
+        <div class="container">
+          <nav class="deliviery__navigation">
+            <ul class="deliviery__menu-disappear" id="deliviery__menu">
+              <li class="deliviery__menu-element">
+                <a
+                  href="#"
+                  onmouseover="ChangeFirstAnotherLine()"
+                  onmouseout="RechangeFirstAnotherLine()"
+                  >Главная
+                </a>
+                <svg class="line-svg2 first-svg" width="110" height="9">
+                  <circle
+                    id="first-another-point"
+                    cx="103"
+                    cy="5"
+                    r="3.5"
+                    fill="transparent"
+                  ></circle>
+                  <line
+                    class="first-line"
+                    id="first-another-line-svg"
+                    x1="10"
+                    y1="5"
+                    x2="100"
+                    y2="5"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-dasharray="110"
+                    stroke-dashoffset="-110"
+                  ></line>
+                </svg>
+              </li>
+              <li class="deliviery__menu-element deliviery__menu-element-second">
+                <a
+                  href="#advantages"
+                  onmouseover="ChangeSecondAnotherLine()"
+                  onmouseout="RechangeSecondAnotherLine()"
+                  >Преимущества</a
+                >
+                <svg class="line-svg2 second-line" width="181" height="9">
+                  <circle
+                    id="second-another-point"
+                    cx="177.5"
+                    cy="5"
+                    r="3.5"
+                    fill="transparent"
+                  ></circle>
+                  <line
+                    class="second-line"
+                    id="second-another-line-svg"
+                    x1="7"
+                    y1="5"
+                    x2="175"
+                    y2="5"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-dasharray="170"
+                    stroke-dashoffset="-170"
+                  ></line>
+                </svg>
+              </li>
+              <li class="deliviery__menu-element deliviery__menu-element-third">
+                <a
+                  href="#products-link"
+                  onmouseover="ChangeThirdAnotherLine()"
+                  onmouseout="RechangeThirdAnotherLine()"
+                  >Товары</a
+                >
+                <svg class="line-svg2 third-line" width="97" height="9">
+                  <circle
+                    id="third-another-point"
+                    cx="93.5"
+                    cy="5"
+                    r="3.5"
+                    fill="transparent"
+                  ></circle>
+                  <line
+                    class="third-line"
+                    id="third-another-line-svg"
+                    x1="7"
+                    y1="5"
+                    x2="92"
+                    y2="5"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-dasharray="100"
+                    stroke-dashoffset="-100"
+                  ></line>
+                </svg>
+              </li>
+              <li class="deliviery__menu-element deliviery__menu-element-fourth">
+                <a
+                  href="#comments-link"
+                  onmouseover="ChangeFourthAnotherLine()"
+                  onmouseout="RechangeFourthAnotherLine()"
+                  >Отзывы</a
+                >
+                <svg class="line-svg2 fourth-line" width="101.5" height="9">
+                  <circle
+                    id="fourth-another-point"
+                    cx="97.5"
+                    cy="5"
+                    r="3.5"
+                    fill="transparent"
+                  ></circle>
+                  <line
+                    class="fourth-line"
+                    id="fourth-another-line-svg"
+                    x1="7"
+                    y1="5"
+                    x2="95"
+                    y2="5"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-dasharray="90"
+                    stroke-dashoffset="-90"
+                  ></line>
+                </svg>
+              </li>
+            </ul>
+            <div class="deliviery__rules">
+              <div class="deliviery__car">
+                <img
+                  class="deliviery__car-img"
+                  src="images/truck.svg"
+                  alt="truck"
+                />
+                <p class="deliviery__car-paragraph">Бесплатная доставка</p>
+              </div>
+              <div class="deliviery__description">
+                <h2 class="deliviery__description-header">
+                  Бесплатную доставка на все заказы
+                </h2>
+                <p class="deliviery__description-paragraph">
+                  Закажите любой товар на любую сумму и мы доставим вам его
+                  абсолютно бесплатно
+                </p>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- <div class="deliviery__forest-img-container">
+          <img
+            class="deliviery__forest-img"
+            src="images/forest.png"
+            alt="forest"
+          /> -->
+        </div>
+      </section>
+      <section class="products" id="products-link">
+        <img
+        class="deliviery__forest-img"
+        src="images/forest.png"
+        alt="forest"
+        />
+        <div class="container">
+          <h2 class="products__header">Наши товары</h2>
+          <div class="products__categories">
+            <nav class="products__cartegories-menu">
+              <ul class="products__categories-items">
+                <div class="button-with-svg">
+                  <button class="introduction__button2" id="button4">
+                    Рюкзаки
+                  </button>
+                  <svg
+                    class="svg-container1"
+                    width="208"
+                    height="24"
+                    viewBox="0 0 208 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="svg-line"
+                      id="line7"
+                      d="M1 24V7.5L1.5 5L3 3L5 1.5L7 1H10H200H201.5L203 1.5L204.5 2.5L205.5 3.5L206.5 5L207 6.5V8V24"
+                      stroke="white"
+                      stroke-width="3"
+                    />
+                  </svg>
+
+                  <svg
+                    class="svg-container2"
+                    width="208"
+                    height="24"
+                    viewBox="0 0 208 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="svg-line"
+                      id="line8"
+                      d="M1 0V16V17L1.5 19L2.5 20.5L3.5 21.5L5 22.5L6.5 23H8.5H117.5H200H201L203 22.5L204 22L206 19.5L207 17V11V1"
+                      stroke="white"
+                      stroke-width="3"
+                    />
+                  </svg>
+                </div>
+                <div class="button-with-svg">
+                  <button class="introduction__button2" id="button5">
+                    Палатки
+                  </button>
+                  <svg
+                    class="svg-container1"
+                    width="208"
+                    height="24"
+                    viewBox="0 0 208 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="svg-line"
+                      id="line9"
+                      d="M1 24V7.5L1.5 5L3 3L5 1.5L7 1H10H200H201.5L203 1.5L204.5 2.5L205.5 3.5L206.5 5L207 6.5V8V24"
+                      stroke="white"
+                      stroke-width="3"
+                    />
+                  </svg>
+
+                  <svg
+                    class="svg-container2"
+                    width="208"
+                    height="24"
+                    viewBox="0 0 208 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="svg-line"
+                      id="line10"
+                      d="M1 0V16V17L1.5 19L2.5 20.5L3.5 21.5L5 22.5L6.5 23H8.5H117.5H200H201L203 22.5L204 22L206 19.5L207 17V11V1"
+                      stroke="white"
+                      stroke-width="3"
+                    />
+                  </svg>
+                </div>
+                <div class="button-with-svg">
+                  <button class="introduction__button2" id="button6">
+                    Спальники
+                  </button>
+                  <svg
+                    class="svg-container1"
+                    width="208"
+                    height="24"
+                    viewBox="0 0 208 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="svg-line"
+                      id="line11"
+                      d="M1 24V7.5L1.5 5L3 3L5 1.5L7 1H10H200H201.5L203 1.5L204.5 2.5L205.5 3.5L206.5 5L207 6.5V8V24"
+                      stroke="white"
+                      stroke-width="3"
+                    />
+                  </svg>
+
+                  <svg
+                    class="svg-container2"
+                    width="208"
+                    height="24"
+                    viewBox="0 0 208 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="svg-line"
+                      id="line12"
+                      d="M1 0V16V17L1.5 19L2.5 20.5L3.5 21.5L5 22.5L6.5 23H8.5H117.5H200H201L203 22.5L204 22L206 19.5L207 17V11V1"
+                      stroke="white"
+                      stroke-width="3"
+                    />
+                  </svg>
+                </div>
+                <div class="button-with-svg">
+                  <button class="introduction__button2" id="button7">
+                    Коврики
+                  </button>
+                  <svg
+                    class="svg-container1"
+                    width="208"
+                    height="24"
+                    viewBox="0 0 208 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="svg-line"
+                      id="line13"
+                      d="M1 24V7.5L1.5 5L3 3L5 1.5L7 1H10H200H201.5L203 1.5L204.5 2.5L205.5 3.5L206.5 5L207 6.5V8V24"
+                      stroke="white"
+                      stroke-width="3"
+                    />
+                  </svg>
+
+                  <svg
+                    class="svg-container2"
+                    width="208"
+                    height="24"
+                    viewBox="0 0 208 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="svg-line"
+                      id="line14"
+                      d="M1 0V16V17L1.5 19L2.5 20.5L3.5 21.5L5 22.5L6.5 23H8.5H117.5H200H201L203 22.5L204 22L206 19.5L207 17V11V1"
+                      stroke="white"
+                      stroke-width="3"
+                    />
+                  </svg>
+                </div>
+                <div class="button-with-svg">
+                  <button class="introduction__button2" id="button8">
+                    Аксессуары
+                  </button>
+                  <svg
+                    class="svg-container1"
+                    width="208"
+                    height="24"
+                    viewBox="0 0 208 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="svg-line"
+                      id="line15"
+                      d="M1 24V7.5L1.5 5L3 3L5 1.5L7 1H10H200H201.5L203 1.5L204.5 2.5L205.5 3.5L206.5 5L207 6.5V8V24"
+                      stroke="white"
+                      stroke-width="3"
+                    />
+                  </svg>
+
+                  <svg
+                    class="svg-container2"
+                    width="208"
+                    height="24"
+                    viewBox="0 0 208 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="svg-line"
+                      id="line16"
+                      d="M1 0V16V17L1.5 19L2.5 20.5L3.5 21.5L5 22.5L6.5 23H8.5H117.5H200H201L203 22.5L204 22L206 19.5L207 17V11V1"
+                      stroke="white"
+                      stroke-width="3"
+                    />
+                  </svg>
+                </div>
+              </ul>
+            </nav>
+          </div>
+          <div class="product__cards">
+            <a
+              class="product__card"
+              id="first-card"
+              href="https://www.wildberries.ru/"
+            >
+              <img
+                src="images/bag1.png"
+                id="first-purchase"
+                alt="bag"
+                class="product__card-img"
+              />
+              <img
+                class="products__svg"
+                src="images/podstavka2.png"
+                alt="stand"
+              />
+
+              <p class="product__card-price">28 999 ₽</p>
+              <p class="product__card-description">
+                Bach Daydream 50 Long black
+              </p>
+              <p class="product__card-brand">Bach</p>
+            </a>
+            <a
+              class="product__card"
+              id="second-card"
+              href="https://www.wildberries.ru/"
+            >
+              <img
+                src="images/bag2.png"
+                id="second-purchase"
+                alt="bag"
+                class="product__card-img"
+              />
+              <img
+                class="products__svg"
+                src="images/podstavka2.png"
+                alt="stand"
+              />
+
+              <p class="product__card-price">30 999 ₽</p>
+              <p class="product__card-description">
+                Black Diamond Speed 50 Sulphur
+              </p>
+              <p class="product__card-brand">Black Dimond</p>
+            </a>
+            <a
+              class="product__card"
+              id="third-card"
+              href="https://www.wildberries.ru/"
+            >
+              <img
+                src="images/bag3.png"
+                id="third-purchase"
+                alt="bag"
+                class="product__card-img"
+              />
+              <img
+                class="products__svg"
+                src="images/podstavka2.png"
+                alt="stand"
+              />
+              <p class="product__card-price">20 999 ₽</p>
+              <p class="product__card-description">
+                Ferrino Transup 60 Dark Grey
+              </p>
+              <p class="product__card-brand">Ferrino</p>
+            </a>
+            <a
+              class="product__card"
+              id="fourth-card"
+              href="https://www.wildberries.ru/"
+            >
+              <img
+                src="images/bag4.png"
+                id="fourth-purchase"
+                alt="bag"
+                class="product__card-img"
+              />
+              <img
+                class="products__svg"
+                src="images/podstavka2.png"
+                alt="stand"
+              />
+              <p class="product__card-price">16 999 ₽</p>
+              <p class="product__card-description">
+                Osprey Nebula 32 Silber Lining
+              </p>
+              <p class="product__card-brand">Osprey</p>
+            </a>
+            <a
+              class="product__card"
+              id="fifth-card"
+              href="https://www.wildberries.ru/"
+            >
+              <img
+                src="images/bag5.png"
+                id="fifth-purchase"
+                alt="bag"
+                class="product__card-img"
+              />
+              <img
+                class="products__svg"
+                src="images/podstavka2.png"
+                alt="stand"
+              />
+              <p class="product__card-price">39 999 ₽</p>
+              <p class="product__card-description">Osprey Atmos AG 65 Black</p>
+              <p class="product__card-brand">Osprey</p>
+            </a>
+            <a
+              class="product__card"
+              id="sixth-card"
+              href="https://www.wildberries.ru/"
+            >
+              <img
+                src="images/bag6.png"
+                id="sixth-purchase"
+                alt="bag"
+                class="product__card-img"
+              />
+              <img
+                class="products__svg"
+                src="images/podstavka2.png"
+                alt="stand"
+              />
+              <p class="product__card-price">35 999 ₽</p>
+              <p class="product__card-description">Tatonka Bison 75+10 Black</p>
+              <p class="product__card-brand">Tatonka</p>
+            </a>
+            <a
+              class="product__card"
+              id="seventh-card"
+              href="https://www.wildberries.ru/"
+            >
+              <img
+                src="images/bag7.png"
+                id="seventh-purchase"
+                alt="bag"
+                class="product__card-img"
+              />
+              <img
+                class="products__svg"
+                src="images/podstavka2.png"
+                alt="stand"
+              />
+
+              <p class="product__card-price">28 999 ₽</p>
+              <p class="product__card-description">Ortlieb Artrack 25 Petrol</p>
+              <p class="product__card-brand">Ortlieb</p>
+            </a>
+            <a
+              class="product__card"
+              id="eighth-card"
+              href="https://www.wildberries.ru/"
+            >
+              <img
+                src="images/bag8.png"
+                id="eighth-purchase"
+                alt="bag"
+                class="product__card-img"
+              />
+              <img
+                class="products__svg"
+                src="images/podstavka2.png"
+                alt="stand"
+              />
+              <p class="product__card-price">28 999 ₽</p>
+              <p class="product__card-description">
+                Tatonka Yukon X1 85+10 Black
+              </p>
+              <p class="product__card-brand">Tatonka</p>
+            </a>
+          </div>
+          <div class="product__pages">
+            <a class="product__page-img" id="left-arrow">
+              <img src="images/left-arrow.svg" alt="arrow" />
+            </a>
+            <a class="product__page-link" id="first-number">1</a>
+            <a class="product__page-link" id="second-number">2</a>
+            <a
+              class="product__page-link product__page-link-chosen"
+              id="third-number"
+              >3</a
+            >
+            <a class="product__page-link" id="fourth-number">4</a>
+            <a class="product__page-link" id="fifth-number">5</a>
+            <a class="product__page-img" id="right-arrow">
+              <img src="images/right-arrow.svg" alt="arrow" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="comments" id="comments-link">
+        <div class="container">
+          <div class="comments__header-arrow">
+            <h2 class="comments__header">Отзывы</h2>
+            <div class="comments__arrows">
+              <a href="#"
+                ><img
+                  src="images/left-arrow.svg"
+                  alt="arrow"
+                  class="comments__arrow"
+                />
+              </a>
+              <a href="#"
+                ><img
+                  src="images/right-arrow.svg"
+                  alt="arrow"
+                  class="comments__arrow"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="comments__people-comments">
+            <div class="comments__comment">
+              <img
+                src="images/comment1.png"
+                alt="user-photo"
+                class="comments__people-photo"
+              />
+              <div class="comments__rating">
+                <p class="comments__people-name">Сергей</p>
+                <div class="comments__rating-container">
+                  <p class="comments__people-rating">
+                    5.0 <span class="comments__count">(6)</span>
+                  </p>
+                  <img
+                    src="images/stars.png"
+                    alt="stars"
+                    class="comments__comment-stars"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comments__comment">
+              <img
+                src="images/comment2.png"
+                alt="user-photo"
+                class="comments__people-photo"
+              />
+              <div class="comments__rating">
+                <p class="comments__people-name">Наталья</p>
+                <div class="comments__rating-container">
+                  <p class="comments__people-rating">
+                    5.0 <span class="comments__count">(6)</span>
+                  </p>
+                  <img
+                    src="images/stars.png"
+                    alt="stars"
+                    class="comments__comment-stars"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comments__comment">
+              <img
+                src="images/comment3.png"
+                alt="user-photo"
+                class="comments__people-photo"
+              />
+              <div class="comments__rating">
+                <p class="comments__people-name">Светлана</p>
+                <div class="comments__rating-container">
+                  <p class="comments__people-rating">
+                    4.9 <span class="comments__count">(6)</span>
+                  </p>
+                  <img
+                    src="images/stars.png"
+                    alt="stars"
+                    class="comments__comment-stars"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comments__comment">
+              <img
+                src="images/comment4.png"
+                alt="user-photo"
+                class="comments__people-photo"
+              />
+              <div class="comments__rating">
+                <p class="comments__people-name">Матвей</p>
+                <div class="comments__rating-container">
+                  <p class="comments__people-rating">
+                    5.0 <span class="comments__count">(6)</span>
+                  </p>
+                  <img
+                    src="images/stars.png"
+                    alt="stars"
+                    class="comments__comment-stars"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comments__comment">
+              <img
+                src="images/comment5.png"
+                alt="user-photo"
+                class="comments__people-photo"
+              />
+              <div class="comments__rating">
+                <p class="comments__people-name">Никита</p>
+                <div class="comments__rating-container">
+                  <p class="comments__people-rating">
+                    5.0 <span class="comments__count">(6)</span>
+                  </p>
+                  <img
+                    src="images/stars.png"
+                    alt="stars"
+                    class="comments__comment-stars"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="average-rating">
+            <img
+              src="images/star.svg"
+              alt="star"
+              class="average-rating__star-img"
+            />
+            <p class="average-rating__paragraph">
+              4.9 / 437
+              <span class="average-rating__explaination">средняя оценка</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <form action="google.com" class="form form-style" id="form">
+      <h2 class="form__header">
+        Заполните форму и мы свяжемся с вами в ближайшее время
+      </h2>
+      <input
+        type="text"
+        class="form__name-input"
+        placeholder="Ваше имя"
+        required
+      />
+      <div class="form__number-container">
+        <input
+          type="text"
+          class="form__number-input"
+          id="form-input"
+          placeholder="+7(999) 999-99-99"
+          required
+        />
+        <div class="rectangle"></div>
+        <a href="#" class="triangle"
+          ><img src="images/triangle.svg" alt="triangle"
+        /></a>
+      </div>
+      <div class="button-with-svg2">
+        <button class="form__button" id="button3" type="submit">
+          Отправить
+        </button>
+        <svg
+          class="svg-container1"
+          width="616"
+          height="32"
+          viewBox="0 0 616 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="svg-line2"
+            id="line5"
+            d="M1 32V6L2 4L4 2L6 1H8H609L611 1.5L612 2L613 3L614 4.5L614.5 5.5L615 7V32"
+            stroke="white"
+            stroke-width="3"
+          />
+        </svg>
+
+        <svg
+          class="svg-container2"
+          width="616"
+          height="32"
+          viewBox="0 0 616 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="svg-line2"
+            id="line6"
+            d="M1 0V25L1.5 27L2.5 28.5L3.5 29.5L5 30.5L6.5 31H8H609L611 30.5L613 29L614.5 27L615 25V23.5V0"
+            stroke="white"
+            stroke-width="3"
+          />
+        </svg>
+      </div>
+    </form>
+    <div class="shadow"></div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="scripts/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="scripts/script.js"></script>
+</html>
